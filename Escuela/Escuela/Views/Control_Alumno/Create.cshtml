@@ -1,0 +1,71 @@
+﻿@model Modelado.Control_Alumno
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+    <script src="~/Scripts/jquery-1.7.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    
+    @using (Html.BeginForm()) {
+        @Html.ValidationSummary(true)
+    
+        <fieldset>
+            <legend>Control_Alumno</legend>
+    
+         
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.calificacion_final)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.calificacion_final)
+                @Html.ValidationMessageFor(model => model.calificacion_final)
+            </div>
+    
+            <div class="editor-label">
+              @*  @Html.LabelFor(model => model.id_clase)*@
+                Clase
+            </div>
+            <div class="editor-field">
+                @*@Html.EditorFor(model => model.id_clase)*@
+                @Html.DropDownList("Clase","Seleccione Clase")
+                @Html.ValidationMessageFor(model => model.id_clase)
+            </div>
+    
+            <div class="editor-label">
+               Periodo
+            </div>
+            <div class="editor-field">
+                @Html.DropDownList("Clase","Seleccione Periodo")
+                @Html.ValidationMessageFor(model => model.id_periodo)
+            </div>
+    
+            <div class="editor-label">
+               Nombre del Estudiante
+            </div>
+            <div class="editor-field">
+                @Html.DropDownList("Estudiante","Seleccione al estudiante")
+                @Html.ValidationMessageFor(model => model.id_estudiante)
+            </div>
+    
+            <p>
+                <input type="submit" value="Create" />
+            </p>
+        </fieldset>
+    }
+    
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+</body>
+</html>

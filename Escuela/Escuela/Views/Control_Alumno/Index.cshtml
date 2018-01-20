@@ -1,0 +1,70 @@
+﻿@model IEnumerable<Modelado.Control_Alumno>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+
+    </p>
+    <table border="1">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.id_control)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.calificacion_final)
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.id_clase)*@
+                Clase
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.id_periodo)*@
+                Periodo
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.id_estudiante)*@
+                Nombre Estudiante
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+             using (Html.BeginForm("Delete", "Control_Alumno", new { id = item.id_clase }))
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.id_control)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.calificacion_final)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.clase)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.periodo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre_completo)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new {  id=item.id_control  }) |
+                 <input type="submit" value="Delete" onclick="return confirm('Deseas Eliminar a @item.id_control')" />
+            </td>
+        </tr>
+    }
+    } 
+    </table>
+</body>
+</html>

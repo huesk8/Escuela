@@ -1,0 +1,48 @@
+﻿@model IEnumerable<Modelado.Periodo>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table border="1">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.id_periodo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.periodo)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+            using (Html.BeginForm("Delete", "Periodo", new { id = item.id_periodo }))
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.id_periodo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.periodo)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new {  id=item.id_periodo  }) |
+                <input type="submit" value="Delete" onclick="return confirm('Deseas Eliminar a @item.periodo')" />
+            </td>
+        </tr>
+    }
+    }
+    </table>
+</body>
+</html>

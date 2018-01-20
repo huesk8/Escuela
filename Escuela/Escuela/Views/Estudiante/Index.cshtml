@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Modelado.Estudiante>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table border="1">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.id_estudiante)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nombre_completo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha_nac)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.genero)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    using (Html.BeginForm("Delete", "Estudiante", new { id = item.id_estudiante }))
+    {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.id_estudiante)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombre_completo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fecha_nac)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.genero)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new {  id=item.id_estudiante  }) |
+            <input type="submit" value="Delete" onclick="return confirm('Deseas Eliminar a @item.nombre_completo')" />
+        </td>
+    </tr>
+ }
+}
+</table>

@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escuela", "Escuela\Escuela.csproj", "{3A8B5063-F40C-4263-8FF1-0AB1B44C9BA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "Negocio\Negocio.csproj", "{92E13AD9-03D3-4083-8ED0-1B13DA303158}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelado", "Modelado\Modelado.csproj", "{3E0F92B7-0F46-449E-8CE0-0F9E0340D049}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A8B5063-F40C-4263-8FF1-0AB1B44C9BA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A8B5063-F40C-4263-8FF1-0AB1B44C9BA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A8B5063-F40C-4263-8FF1-0AB1B44C9BA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A8B5063-F40C-4263-8FF1-0AB1B44C9BA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92E13AD9-03D3-4083-8ED0-1B13DA303158}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92E13AD9-03D3-4083-8ED0-1B13DA303158}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92E13AD9-03D3-4083-8ED0-1B13DA303158}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92E13AD9-03D3-4083-8ED0-1B13DA303158}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E0F92B7-0F46-449E-8CE0-0F9E0340D049}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E0F92B7-0F46-449E-8CE0-0F9E0340D049}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E0F92B7-0F46-449E-8CE0-0F9E0340D049}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E0F92B7-0F46-449E-8CE0-0F9E0340D049}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

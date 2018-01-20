@@ -1,0 +1,9 @@
+c:\Users\Edgar\documents\visual studio 2012\Projects\Escuela\Negocio\bin\Debug\Negocio.dll
+c:\Users\Edgar\documents\visual studio 2012\Projects\Escuela\Negocio\bin\Debug\Negocio.pdb
+c:\Users\Edgar\documents\visual studio 2012\Projects\Escuela\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+c:\Users\Edgar\documents\visual studio 2012\Projects\Escuela\Negocio\obj\Debug\Negocio.dll
+c:\Users\Edgar\documents\visual studio 2012\Projects\Escuela\Negocio\obj\Debug\Negocio.pdb
+c:\Users\Edgar\documents\visual studio 2012\Projects\Escuela\Negocio\bin\Debug\Modelado.dll
+c:\Users\Edgar\documents\visual studio 2012\Projects\Escuela\Negocio\bin\Debug\EntityFramework.dll
+c:\Users\Edgar\documents\visual studio 2012\Projects\Escuela\Negocio\bin\Debug\Modelado.pdb
+c:\Users\Edgar\documents\visual studio 2012\Projects\Escuela\Negocio\bin\Debug\EntityFramework.xml
